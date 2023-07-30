@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dersler Tablosu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tabs">
+        <div class="dropdown">
+            <button class="dropbtn">Bölümler</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="showTab('bilgisayar')">Bilgisayar</a>
+                <a href="#" onclick="showTab('makina')">Makina</a>
+                <a href="#" onclick="showTab('gida')">Gıda</a>
+                <a href="#" onclick="showTab('insaat')">İnşaat</a>
+            </div>
+        </div>
+        <button class="tab-button" onclick="openTab(event, 'derslikler')">Derslikler</button>
+        <button class="tab-button" onclick="openTab(event, 'gozetmenler')">Gözetmenler</button>
+    </div>
+
+    <div id="bilgisayar" class="tab-content" style="display: none;">
+        <h2>Bilgisayar Dersleri</h2>
+        <table>
+            <tr>
+                <th>Ders Adı</th>
+                <th>Vize</th>
+                <th>Final</th>
+                <th>Büt</th>
+                <th>Öğrenci Sayısı</th>
+            </tr>
+            <tr>
+                <td>Matematik</td>
+                <td><input type="radio" name="matematikVize" value="Evet"> Evet <input type="radio" name="matematikVize" value="Hayır"> Hayır</td>
+                <td><input type="radio" name="matematikFinal" value="Evet"> Evet <input type="radio" name="matematikFinal" value="Hayır"> Hayır</td>
+                <td><input type="radio" name="matematikBut" value="Evet"> Evet <input type="radio" name="matematikBut" value="Hayır"> Hayır</td>
+                <td>50</td>
+            </tr>
+            <!-- Diğer dersler buraya eklenebilir -->
+        </table>
+    </div>
+
+    <div id="makina" class="tab-content" style="display: none;">
+        <h2>Makina Dersleri</h2>
+        <table>
+            <tr>
+                <th>Ders Adı</th>
+                <th>Vize</th>
+                <th>Final</th>
+                <th>Büt</th>
+                <th>Öğrenci Sayısı</th>
+            </tr>
+            <tr>
+                <td>Matematik</td>
+                <td><input type="radio" name="matematikVize" value="Evet"> Evet <input type="radio" name="matematikVize" value="Hayır"> Hayır</td>
+                <td><input type="radio" name="matematikFinal" value="Evet"> Evet <input type="radio" name="matematikFinal" value="Hayır"> Hayır</td>
+                <td><input type="radio" name="matematikBut" value="Evet"> Evet <input type="radio" name="matematikBut" value="Hayır"> Hayır</td>
+                <td>50</td>
+            </tr>
+            <!-- Diğer dersler buraya eklenebilir -->
+        </table>
+    </div>
+
+    <div id="gida" class="tab-content" style="display: none;">
+        <h2>Gıda Dersleri</h2>
+        <table>
+            <tr>
+                <th>Ders Adı</th>
+                <th>Vize</th>
+                <th>Final</th>
+                <th>Büt</th>
+                <th>Öğrenci Sayısı</th>
+            </tr>
+            <tr>
+                <td>Müzik</td>
+                <td><input type="radio" name="muzikVize" value="Evet"> Evet <input type="radio" name="muzikVize" value="Hayır"> Hayır</td>
+                <td><input type="radio" name="muzikFinal" value="Evet"> Evet <input type="radio" name="muzikFinal" value="Hayır"> Hayır</td>
+                <td><input type="radio" name="muzikBut" value="Evet"> Evet <input type="radio" name="muzikBut" value="Hayır"> Hayır</td>
+                <td>60</td>
+            </tr>
+            <!-- Diğer dersler buraya eklenebilir -->
+        </table>
+    </div>
+    <div id="insaat" class="tab-content" style="display: none;">
+        <h2>Gıda Dersleri</h2>
+        <table>
+            <tr>
+                <th>Ders Adı</th>
+                <th>Vize</th>
+                <th>Final</th>
+                <th>Büt</th>
+                <th>Öğrenci Sayısı</th>
+            </tr>
+            <tr>
+                <td>Müzik</td>
+                <td><input type="radio" name="muzikVize" value="Evet"> Evet <input type="radio" name="muzikVize" value="Hayır"> Hayır</td>
+                <td><input type="radio" name="muzikFinal" value="Evet"> Evet <input type="radio" name="muzikFinal" value="Hayır"> Hayır</td>
+                <td><input type="radio" name="muzikBut" value="Evet"> Evet <input type="radio" name="muzikBut" value="Hayır"> Hayır</td>
+                <td>60</td>
+            </tr>
+            <!-- Diğer dersler buraya eklenebilir -->
+        </table>
+    </div>
+    <div id="derslikler" class="tab-content" style="display: none;">
+        <h2>Derslikler</h2>
+        <table>
+            <tr>
+                <th>Derslik</th>
+                <th>Derslik Kontenjanı</th>
+                <th>Sınav Kontenjanı</th>
+            </tr>
+            <tr>
+                <td>D101</td>
+                <td>30</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>D102</td>
+                <td>25</td>
+                <td>40</td>
+            </tr>
+            <!-- Diğer derslikler buraya eklenebilir -->
+        </table>
+    </div>
+    <div id="gozetmenler" class="tab-content" style="display: none;">
+        <h2>Gözetmenler</h2>
+        <table>
+            <tr>
+                <th>Gözetmen</th>
+                <th>Uygunluk</th>
+                <th>Bölüm</th>
+            </tr>
+            <tr>
+                <td>Gözetmen1</td>
+                <td><input type="radio" name="gozetmen1Uygunluk" value="Evet"> Evet <input type="radio" name="gozetmen1Uygunluk" value="Hayır"> Hayır</td>
+                <td>Bilgisayar</td>
+            </tr>
+            <tr>
+                <td>Gözetmen2</td>
+                <td><input type="radio" name="gozetmen2Uygunluk" value="Evet"> Evet <input type="radio" name="gozetmen2Uygunluk" value="Hayır"> Hayır</td>
+                <td>Makina</td>
+            </tr>
+            <!-- Diğer gözetmenler buraya eklenebilir -->
+        </table>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
